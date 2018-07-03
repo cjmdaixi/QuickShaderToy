@@ -6,4 +6,22 @@ Window {
     width: 640
     height: 480
     title: qsTr("Hello World")
+
+    ShaderEffect{
+        id: effect
+        anchors.fill: parent
+        property real iTime: 0
+        //fragmentShader: "qrc:/ripple.frag"
+        fragmentShader: "qrc:/heartbeat.frag"
+
+        Timer{
+            running: true
+            triggeredOnStart: true
+            interval: 10
+            repeat: true
+            onTriggered: {
+                effect.iTime +=0.01;
+            }
+        }
+    }
 }
