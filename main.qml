@@ -12,7 +12,8 @@ Window {
         anchors.fill: parent
         property real iTime: 0
         //fragmentShader: "qrc:/ripple.frag"
-        fragmentShader: "qrc:/heartbeat.frag"
+        //fragmentShader: "qrc:/heartbeat.frag"
+        fragmentShader: "qrc:/heartbeat-3d.frag"
 
         Timer{
             running: true

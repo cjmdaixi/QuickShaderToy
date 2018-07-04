@@ -3,5 +3,6 @@
         <file>main.qml</file>
         <file>heartbeat.frag</file>
         <file>ripple.frag</file>
+        <file>heartbeat-3d.frag</file>
     </qresource>
 </RCC>
